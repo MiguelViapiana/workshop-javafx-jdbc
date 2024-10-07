@@ -77,8 +77,7 @@ public class DepartmentFormController implements Initializable {
 		}
 		catch(ValidateException e) {
 			setErrorsMessages(e.getErrors());
-		}
-		
+		}	
 	}
 
 	private void notifyDataChangeListeners() {
@@ -100,7 +99,6 @@ public class DepartmentFormController implements Initializable {
 		if(exception.getErrors().size() > 0) {
 			throw exception;
 		}
-		
 		return obj;
 	}
 
